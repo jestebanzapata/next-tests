@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = { className: 'test'}
 
 export default function Home() {
   return (
@@ -16,6 +16,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
+        <h1 className="title">
+          Read <Link href="/post/first-post">this page is a POST!</Link>
+        </h1>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
