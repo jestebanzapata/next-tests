@@ -34,7 +34,7 @@ export const useFormLeave = (isDirty: boolean) => {
 			}
 
 			event.preventDefault();
-			return event.returnValue = "Are you sure you want to exit?";
+			return event.returnValue = "Are you sure you want to exit?.";
 		},
 		[isDirty]
 	);

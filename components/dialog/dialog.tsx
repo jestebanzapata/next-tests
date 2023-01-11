@@ -15,6 +15,10 @@ const Dialog: FC<DialogProps> = ({leaveCallback}) => {
 
   return (
     <div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
         <h2>Are you sure you want to leave the page?</h2>
 
         <button onClick={() => {leave(true)}}>Leave</button>
