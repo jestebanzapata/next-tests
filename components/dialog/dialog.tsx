@@ -10,7 +10,7 @@ interface DialogProps {
 const Dialog: FC<DialogProps> = ({leaveCallback}) => {
 
   const leave = async (leave: boolean) => {
-    await leaveCallback(leave)();
+    await leaveCallback(leave);
   }
 
   return (

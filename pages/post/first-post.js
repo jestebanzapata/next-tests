@@ -14,13 +14,25 @@ export default function FirstPost() {
         router.push('/');
     };
 
+    const goBack = () => {
+        // router.back();
+        history.back();
+    };
+
+    const goTo = () => {
+        window.location.href = 'http://localhost:3000/assign';
+    };
+
     return <div>
         <h1>First Post </h1>
 
-        <Link href="/">Navigation with link</Link>
+        <Link href="/" >Your link</Link>
 
         <button onClick={navigate}>Navigation with button</button>
 
+        <button onClick={goBack}>Navigation back</button>
+
+        <button onClick={goTo}>Navigation href</button>
 
         {showLeaveModal && <Dialog leaveCallback={handleUserChoice}/>}
 
